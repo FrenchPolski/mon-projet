@@ -116,6 +116,6 @@ if st.checkbox("Lancement temps réel"):
         time.sleep(0.5)
         
         # Redémarrer le script
-        st.experimental_rerun()
+        st.rerun()
 
 

@@ -43,7 +43,7 @@ else:
 
 
 st.title("   ")
-btc = pd.read_csv("/Users/pierreporte/Documents/Université/Master/M2/Semestre 1/Data/Analyse Python/StreamLit/Données API/projet/prix_bitcoin.csv")
+btc = pd.read_csv("prix_bitcoin.csv")
  
 
 
@@ -94,7 +94,7 @@ if st.button("Vente 1 BTC"):
         df.to_csv('ventebtc.csv', index=False, mode='a', header=not pd.io.common.file_exists('ventebtc.csv'))
    
 
-vente = pd.read_csv("/Users/pierreporte/Documents/Université/Master/M2/Semestre 1/Data/Analyse Python/StreamLit/Données API/projet/ventebtc.csv")
+vente = pd.read_csv("ventebtc.csv")
 
 st.write(vente)
 
